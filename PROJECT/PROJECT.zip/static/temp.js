@@ -85,13 +85,12 @@ function iReallyDontKnowWhatToDo() {
             understood = true
         }
     }//for ends
-    if (ran == false) {
-        download("RUN_ME.js", base)
+        download("RUN_ME.js", base+EndCode)
     }
 
 }
 
-base += "\nif(understood==false) { \n twiml.message(\"Im not sure i understand\")\n }\n res.writeHead(200, {'Content-Type': 'text/xml'});\nres.end(twiml.toString());   \n});    \n http.createServer(app).listen(1337, () => {\n console.log('Express server listening on port 1337');\n });\n"
+var EndCode = "\nif(understood==false) { \n twiml.message(\"Im not sure i understand\")\n }\n res.writeHead(200, {'Content-Type': 'text/xml'});\nres.end(twiml.toString());   \n});    \n http.createServer(app).listen(1337, () => {\n console.log('Express server listening on port 1337');\n });\n"
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
