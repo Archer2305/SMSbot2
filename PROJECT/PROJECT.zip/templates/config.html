@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant SMS Bot</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <script src="{{url_for('static', filename='temp.js')}}"></script>
+
+  <script src="script.js"></script>
+  <!--../js/script.js-->
+  <!-- <link rel="stylesheet" href="../sass/mystyles.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+ 
+      <form class="form" id="form-for-things-idk">
+        <!-- <div class="field"> -->
+        <!-- <h1 class="title">Restaurant name</h1> -->
+        <!-- <label class="label">Name</label> -->
+        <!-- <input type="text" class="input has-text-dark" placeholder="Name here" id="command-1-input"> -->
+        <!-- <label class="label">Reply</label> -->
+        <!-- <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-1-input"> -->
+        <!-- </div> -->
+        <br>
+        <div id="command1" , class="field">
+          <label class="label">Please enter your  AccountSid</label>
+          <input type="password"  class="input has-text-dark" placeholder="Info Here" id="JSON-1-input">
+      
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <br>  <br>
+        <div id="command2" , class="field">
+          <label class="label">Please enter your authToken</label>
+          <input type="password"  class="input has-text-dark" placeholder="Info Here" id="JSON-2-input">
+         
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <br>  <br>
+        <div id="command3" , class="field">
+          <label class="label"> Please Enter the Bot's Phone Number </label>
+          <input type="password"  class="input has-text-dark" placeholder="Info Here" id="JSON-3-input">
+          
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <br>  <br>
+        <div id="command4" , class="field">
+          <label class="label">Please enter The phone numbers allowed!  (only for trial account or verification systems)</label>
+          <input type="password"  class="input has-text-dark" placeholder="Info Here" id="JSON-4-input">
+         
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <br>  <br>
+        <div id="command5" , class="field">
+          <label class="label">Please Enter Your WebHook URL</label>
+          <input type="password"  class="input has-text-dark" placeholder="Info Here" id="JSON-5-input">
+
+        </div>
+        <!--  -->
+        <!--  -->
+        
+      </form>
+     
+     
+     
+
+      <br>
+      <div class="buttons-yay">
+        <button  style="visibility: visible;" class="button is-dark is-center" type="button" onclick="CreateConfig()">Create Config file </button>
+        <br> <label><a class="level-item" href="/config.html"> Next</a></label>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

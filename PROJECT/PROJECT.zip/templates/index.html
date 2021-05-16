@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant SMS Bot</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <script src="{{url_for('static', filename='temp.js')}}"></script>
+
+  <script src="script.js"></script>
+  <!--../js/script.js-->
+  <!-- <link rel="stylesheet" href="../sass/mystyles.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+  <h1 class="title level-item">Your Restaurant Bot</h1>
+  <label class="level-item" for="optionSelect">Enter the Number of Commands: &emsp; <form action="app.py"
+      id="commandform">
+      <select name="# of cmds" id="optionSelect" form="commandform" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9" selected >9</option>
+
+      </select>
+    </form></label>
+  <div class="level-item"><button class="button is-primary" onclick="myFunction()">Refresh</button></div>
+ 
+
+  <div class="container">
+    <br><br>
+    <div class="block">
+      <button  style="visibility: visible;" class="button is-dark is-center" type="button" onclick="iReallyDontKnowWhatToDo()">Download Bot</button>
+      <br> <label><a class="level-item" href="/config.html"> Next</a></label>
+
+      <form class="form" id="form-for-things-idk">
+        <!-- <div class="field"> -->
+        <!-- <h1 class="title">Restaurant name</h1> -->
+        <!-- <label class="label">Name</label> -->
+        <!-- <input type="text" class="input has-text-dark" placeholder="Name here" id="command-1-input"> -->
+        <!-- <label class="label">Reply</label> -->
+        <!-- <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-1-input"> -->
+        <!-- </div> -->
+        <div id="command1" , class="field">
+          <h1 class="title">Command #1</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-1-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-1-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command2" , class="field">
+          <h1 class="title">Command #2</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-2-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-2-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command3" , class="field">
+          <h1 class="title">Command #3</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-3-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-3-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command4" , class="field">
+          <h1 class="title">Command #4</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-4-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-4-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command5" , class="field">
+          <h1 class="title">Command #5</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-5-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-5-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command6" , class="field">
+          <h1 class="title">Command #6</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-6-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-6-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command7" , class="field">
+          <h1 class="title">Command #7</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-7-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-7-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="command8" , class="field">
+          <h1 class="title">Command #8</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-8-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-8-input">
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <!--  -->
+        <!--  --> 
+        <div id="command9" , class="field">
+          <h1 class="title">Command #9</h1>
+          <label class="label">Command</label>
+          <input type="text" class="input has-text-dark" placeholder="Command here" id="command-9-input">
+          <label class="label">Reply</label>
+          <input type="text" class="input has-text-dark" placeholder="Reply here" id="reply-9-input">
+        </div>
+      </form>
+     
+     <script>
+        function myFunction() {
+          // window.alert("myFunction() has been run after button press");
+          var formValue = document.getElementById("optionSelect").value;
+          var i;
+          for (i = 1; i <= 9; i++) {
+            if (i <= formValue) {
+              document.getElementById(`command${i}`).style.visibility = 'visible';
+              
+            } 
+            else{
+              document.getElementById(`command${i}`).style.visibility = 'hidden';  
+            }
+          }
+        } 
+      </script>
+     
+
+      <br>
+      <div class="buttons-yay">
+        <button class="button is-dark is-hidden" type="button" onclick="addCommand()">Add Command</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
